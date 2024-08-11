@@ -1,0 +1,75 @@
+.overlay-window {
+    z-index: 2;
+    position: absolute;
+    top:10dvh;
+
+    min-width: var(--var-min-width);
+    max-width: var(--var-max-width);
+    min-height: 65dvh;
+    max-height: 80dvh;
+
+    background-color: rgb(42, 99, 205);
+    border: 1px solid rgb(18, 8, 8);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+}
+
+.background-blur {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(31, 31, 31);
+    opacity: 75%;
+    filter: blur(12px);
+}
+
+.overlay-close {
+    position: relative;
+    align-self: flex-end;
+    margin: 11px;
+}
+
+.overlay-input-section {
+    display: inherit;
+    flex-direction: inherit;
+    text-align: center;
+    width: 80%;
+}
+
+.overlay-textarea {
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.overlay-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.overlay-checkbox {
+    align-self: center;
+}
+
+.mcoption-textarea {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.mcoption-close {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.overlay-load-button {
+    margin: 20px;
+}

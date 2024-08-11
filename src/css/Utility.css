@@ -1,0 +1,191 @@
+/* For use in any file, alternative to bootstrap since it was used very little */
+
+:root {
+    --var-max-width: 2000px;
+    --var-min-width: 250px;
+    --var-standard-scaling-factor: 0.35dvw;
+    --var-large-scaling-factor: 1dvw;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Default button colours on Windows and Android */
+button {
+    background-color: rgb(248, 212, 212);
+    color: rgb(61, 63, 62);
+    padding-left: 5px;
+    padding-right: 5px;
+
+    /* tap target */
+    min-height: 35px;
+}
+
+fieldset {
+    border: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-green {
+    color: rgb(1, 20, 1);
+}
+
+.text-red {
+    color: rgb(1, 13, 2);
+}
+
+/* spacing */
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.my-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mr-a {
+    margin-right: auto !important;
+}
+
+/* width and height with the same scaling as the font */
+.wh-1 {
+    width: calc(1rem + var(--var-standard-scaling-factor));
+    height: calc(1rem + var(--var-standard-scaling-factor));
+}
+
+.wh-4 {
+    width: calc(1.6rem + var(--var-standard-scaling-factor));
+    height: calc(1.6rem + var(--var-standard-scaling-factor));
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.horizontal-container-njs {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-container *,
+.horizontal-container-njs * {
+    margin: 10px;
+}
+
+.self-center {
+    align-self: center;
+}
+
+/* font sizes */
+.ft-5 {
+    text-align: center;
+    font-size: calc(2.5rem + var(--var-standard-scaling-factor));
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ft-4 {
+    text-align: center;
+    font-size: calc(1.6rem + var(--var-standard-scaling-factor));
+}
+
+
+.ft-3 {
+    text-align: center;
+    font-size: calc(1.4rem + var(--var-standard-scaling-factor));
+}
+
+.ft-2 {
+    text-align: center;
+    font-size: calc(1.2rem + var(--var-standard-scaling-factor));
+}
+
+.ft-1 {
+    text-align: center;
+    font-size: calc(1rem + var(--var-standard-scaling-factor));
+}
+
+/* Extra large font for 1440p/4k, extra padding so the large text is not almost touching */
+@media (min-width: 2800px) {
+    .ft-5 {
+        font-size: calc(3rem + var(--var-large-scaling-factor));
+        padding: 10px;
+    }
+
+    .ft-4 {
+        font-size: calc(1.6rem + var(--var-large-scaling-factor));
+        padding: 10px;
+    }
+
+    .ft-3 {
+        font-size: calc(1.4rem + var(--var-large-scaling-factor));
+        padding: 10px;
+    }
+
+    .ft-2 {
+        font-size: calc(1.2rem + var(--var-large-scaling-factor));
+        padding: 10px;
+    }
+
+    .ft-1 {
+        font-size: calc(1rem + var(--var-large-scaling-factor));
+        padding: 10px;
+    }
+}
+
+/* Small font, no scailing, for phones */
+@media (max-width: 800px) {
+    .ft-5 {
+        font-size: 3rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .ft-4 {
+        font-size: 1.6rem;
+    }
+
+    .ft-3 {
+        font-size: 1.4rem;
+    }
+
+    .ft-2 {
+        font-size: 1.2rem;
+    }
+
+    .ft-1 {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive width */
+.responsive-width {
+    width: 50% !important;
+}
+
+@media (max-width: 1300px) {
+    .responsive-width {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .responsive-width {
+        width: 90% !important;
+    }
+}
