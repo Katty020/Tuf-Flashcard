@@ -11,16 +11,15 @@ export default function OverlayWindow(props) {
 
         return (
             <>
-                <p className="text-white ft-2 my-1">Made by <a className="text-white" href="">Aryan Katiyar</a></p>
-                <p className="text-white ft-2 my-1">The program automatically saves your changes to local storage</p>
+                <p className="text-white ft-2 my-1">Made by <a className="text-white" href="https://github.com/Katty020">Aryan Katiyar</a></p>
+                <p className="text-white ft-2 my-1">Your progress is automatically stored, ensuring you don't lose any work</p>
                 <p className="text-white ft-2 my-1">To fully save your flashcards, click the save button to download</p>
-                <p className="text-white ft-2 my-1">This JSON file can then be used through the load button, allowing you to have multiple sets of cards</p>
-                <p className="text-white ft-2 my-1">To see this information again, click about</p>
+                <p className="text-white ft-2 my-1">This JSON file can then be loaded through the load button, enabling you to manage and switch between multiple sets of cards.</p>
 
 
                 <p className="text-white ft-2">Load a set to continue</p>
-                <button className="ft-2" onClick={() => { props.defaultCards(); props.resetOverlay() }}>Load example set of flashcards</button>
-                <button className="ft-2" onClick={() => { props.emptyCards(); props.resetOverlay() }}>Load empty set of flashcards</button>
+                <button className="ft-2" onClick={() => { props.defaultCards(); props.resetOverlay() }}>Load example set</button>
+                <button className="ft-2" onClick={() => { props.emptyCards(); props.resetOverlay() }}>Load empty set</button>
                 {props.loadFileControls()}
             </>
         )

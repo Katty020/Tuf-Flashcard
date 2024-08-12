@@ -52,7 +52,7 @@ export default function Flashcard(props) {
                 return (<p className="ft-4 text-green"> Correct! </p>)
             }
             else if (gotCorrect === "wrong") {
-                return (<p className="ft-4 text-red"> Wrong </p>)
+                return (<p className="ft-4 text-red"> Wrong! </p>)
             }
         }
     }
